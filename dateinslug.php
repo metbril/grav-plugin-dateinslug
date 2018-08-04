@@ -45,8 +45,11 @@ class DateInSlugPlugin extends Plugin
      *
      * @param Event $e
      */
-    public function onAdminSave(Event $e)
+    public function onAdminSave(Event $event)
     {
+        $header = $event['header'];
+        $header['route.default'] = $header['date'].'-'.$header['slug'];
+        $event['header'] = $header;
 
     }
 
