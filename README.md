@@ -1,12 +1,12 @@
-# Dateinslug Plugin
+# Date In Slug Plugin
 
 **This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
 
-The **Dateinslug** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Date In Slug
+The **Date In Slug** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Date In Slug
 
 ## Installation
 
-Installing the Dateinslug plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
+Installing the Date In Slug plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
 
 ### GPM Installation (Preferred)
 
@@ -14,7 +14,7 @@ The simplest way to install this plugin is via the [Grav Package Manager (GPM)](
 
     bin/gpm install dateinslug
 
-This will install the Dateinslug plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/dateinslug`.
+This will install the Date In Slug plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/dateinslug`.
 
 ### Manual Installation
 

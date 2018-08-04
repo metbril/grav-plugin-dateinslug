@@ -6,10 +6,10 @@ use Grav\Plugin\Admin\Admin;
 use RocketTheme\Toolbox\Event\Event;
 
 /**
- * Class DateinslugPlugin
+ * Class DateInSlugPlugin
  * @package Grav\Plugin
  */
-class DateinslugPlugin extends Plugin
+class DateInSlugPlugin extends Plugin
 {
     /**
      * @return array
