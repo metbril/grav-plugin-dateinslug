@@ -1,6 +1,6 @@
 name: Date In Slug
 version: 0.1.0
-description: Date In Slug
+description: Set default route override when page is saved in admin panel.
 icon: map-signs
 author:
   name: Robert van Bregt
