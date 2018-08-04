@@ -1,13 +1,13 @@
 name: Date In Slug
 version: 0.1.0
 description: Date In Slug
-icon: plug
+icon: route
 author:
   name: Robert van Bregt
   email: robert@robertvanbregt.nl
 homepage: https://github.com/metbril/grav-plugin-dateinslug
 demo: http://demo.yoursite.com
-keywords: grav, plugin, etc
+keywords: grav, plugin, date, slug
 bugs: https://github.com/metbril/grav-plugin-dateinslug/issues
 docs: https://github.com/metbril/grav-plugin-dateinslug/blob/develop/README.md
 license: MIT
