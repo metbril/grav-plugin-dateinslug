@@ -66,7 +66,7 @@ class DateInSlugPlugin extends Plugin
         $slug = $page->slug();
         $parent = $page->parent();
         if ($parent->home()) {
-            $parent_route = "/";
+            $parent_route = "";
         } 
         else {
             $parent_route = $parent->route();
