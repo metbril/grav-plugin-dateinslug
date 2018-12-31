@@ -1,8 +1,9 @@
 # Date In Slug Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
+The **Date In Slug** Plugin is for [Grav CMS](http://github.com/getgrav/grav). 
+The plugin prepends the slug for any blog item with the publication date.
 
-The **Date In Slug** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Date In Slug
+'slug' will become '2018/12/31/slug'.
 
 ## Installation
 
@@ -44,13 +45,13 @@ Note that if you use the admin plugin, a file with your configuration, and named
 
 ## Usage
 
-**Describe how to use the plugin.**
+There is nothing to do other than enabling the plugin.
 
 ## Credits
 
-**Did you incorporate third-party code? Want to thank somebody?**
+None.
 
 ## To Do
 
-- [ ] Future plans, if any
-
+- [ ] Configurable permalink path: year, year/month or year/month/date
+- [ ] Allow/deny specific pages through configuration

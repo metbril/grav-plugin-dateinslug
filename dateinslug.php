@@ -33,9 +33,14 @@ class DateInSlugPlugin extends Plugin
      */
     public function onPluginsInitialized()
     {
+        // Don't proceed if we are in the admin plugin
+        if ($this->isAdmin()) {
+            return;
+        }
+
         // Enable the main event we are interested in
         $this->enable([
-            'onAdminSave' => ['onAdminSave', 0]
+            'onPageProcessed' => ['onPageProcessed', 0]
         ]);
     }
 
@@ -45,12 +50,24 @@ class DateInSlugPlugin extends Plugin
      *
      * @param Event $e
      */
-    public function onAdminSave(Event $event)
+    public function onPageProcessed(Event $e)
     {
-        $header = $event['header'];
-        $header['route.default'] = '/123';
-        $event['header'] = $header;
+        $page = $e['page'];
 
+        // only parse pages with 'item' template (blog entries)
+        $template = $page->template();
+        if (!($template == 'item')) {
+            return;
+        }
+
+        $header = $page->header();
+        $date = isset($header->date) ? date('Y-m-d', strtotime($header->date)) : date('Y-m-d');
+        $date = substr(preg_replace('/-/', '/', $date), 0, 10);
+        $slug = $page->slug();
+        $parent = $page->parent();
+        $parent_route = $parent->route();
+        $route = $parent_route.'/'.$date.'/'.$slug;
+        $header->routes['default'] = $route;
+        $page->route($route);
     }
-
 }
