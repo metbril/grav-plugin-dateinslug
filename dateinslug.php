@@ -65,12 +65,13 @@ class DateInSlugPlugin extends Plugin
         $date = substr(preg_replace('/-/', '/', $date), 0, 10);
         $slug = $page->slug();
         $parent = $page->parent();
-        if ($parent->home()) {
-            $parent_route = "";
-        } 
-        else {
-            $parent_route = $parent->route();
-        }
+        // if ($parent->home()) {
+        //     $parent_route = "";
+        // } 
+        // else {
+        //     $parent_route = $parent->route();
+        // }
+        $parent_route = "/";
         $route = $parent_route.'/'.$date.'/'.$slug;
         $header->routes['default'] = $route;
         $page->route($route);
