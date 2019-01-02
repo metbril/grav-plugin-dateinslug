@@ -71,7 +71,7 @@ class DateInSlugPlugin extends Plugin
         // else {
         //     $parent_route = $parent->route();
         // }
-        $parent_route = "/";
+        $parent_route = "";
         $route = $parent_route.'/'.$date.'/'.$slug;
         $header->routes['default'] = $route;
         $page->route($route);
