@@ -61,8 +61,7 @@ class DateInSlugPlugin extends Plugin
         }
 
         $header = $page->header();
-        $date = isset($header->date) ? date('Y-m-d', strtotime($header->date)) : date('Y-m-d');
-        $date = substr(preg_replace('/-/', '/', $date), 0, 10);
+        $date = isset($header->date) ? date('Y/m/d', strtotime($header->date)) : date('Y/m/d');
         $slug = $page->slug();
         $parent = $page->parent();
         // if ($parent->home()) {
